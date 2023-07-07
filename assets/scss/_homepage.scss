@@ -1,0 +1,98 @@
+#homepage {
+    .mainvisual {
+        position: relative;
+        height: 742px;
+        svg {
+            width: 35px;
+            height: 35px;
+            color: $themeColor;
+        }
+        .owl-prev {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 20px;
+            z-index: 999;
+        }
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 20px;
+        }
+        .owl-nav {
+            margin: 0;
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 15px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            span {
+                background: #869791;
+                outline: solid rgba(255, 255, 255, 0.8) 2px;
+            }
+            .active span {
+                background: white;
+            }
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover{
+            color: unset;
+            text-decoration: none;
+            width: 35px;
+            height: 35px;
+            background-color: #fff;
+            border-radius: 25px;
+        }
+        .owl-carousel .owl-item figure {
+            max-height: 741px;
+            img {
+                object-fit: cover;
+            }
+        } 
+        button:focus {
+            outline: 0;
+        }
+        &__info {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 120px;
+            padding-right: 50px;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 40%;
+            h1 {
+                font-size: 60px;
+                font-weight: 900;
+                color: $themeColor;
+            }
+            p {
+                font-size: 24px;
+            }
+            &-button {
+                display: flex;
+                justify-content: center;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: #fff;
+                width: 168px;
+                height: 48px;
+                background-color: $themeColor;
+                border-radius: 5px;
+                &:hover {
+                    background-color: #864656;
+                }
+            }
+        }
+    }
+}
