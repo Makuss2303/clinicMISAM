@@ -1,0 +1,169 @@
+.footer {
+    background: url('./assets/images/footer-background.png') center center no-repeat;
+    background-size: cover;
+    .container {
+        min-height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px
+    }
+    &-icon {
+        display: block;
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        margin-bottom: 40px;
+    }
+
+    .section-menu-wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .section-form-wrap {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    &__address {
+        &-text{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            .address, .phone {
+                display: flex;
+                gap: 25px;
+            }
+            .address {
+                margin-bottom: 15px;
+            }
+            .phone {
+                figure {
+                    margin-right: 5px;
+                }
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 3rem;
+        li {
+            a {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 700;
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-end;
+        input[type=text], input[type=tel] {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+            box-sizing: border-box;
+            color: #333;
+            font-size: .97em;
+            height: 45px;
+            padding: 0 0.75em;
+            transition: color .3s,border .3s,background .3s,opacity .3s;
+            vertical-align: middle;
+            width: 100%;
+        }
+        textarea {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+            box-sizing: border-box;
+            color: #333;
+            font-size: .97em;
+            padding: 10px 0.75em;
+            transition: color .3s,border .3s,background .3s,opacity .3s;
+            vertical-align: middle;
+            width: 100%;
+            margin-bottom: 2px;
+        }
+        input[type=text], input[type=tel], textarea {
+            &:focus {
+                outline: none;
+            }
+            border-radius: 10px;
+            border: 1px solid $themeColor;
+        }
+        input[type=submit] {
+            width: 87px;
+            height: 40px;
+            color: #fff;
+            font-weight: 700;
+            background-color: $themeColor;
+            border: none;
+            border-radius: 10px;
+            &:hover {
+                background-color: $themeHover;
+                transition: $animation;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) { 
+    .footer {
+        &-icon {
+            width: 50%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+        &__address {
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        &__menu {
+            padding-left: 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 40px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) { 
+    .footer {
+        &__address {
+            &-text{
+                font-size: 18px;
+            }
+        }
+        &__menu {
+            column-gap: 20px;
+            row-gap: 10px;
+            justify-content: space-evenly;
+            li {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
