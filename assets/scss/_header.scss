@@ -272,19 +272,6 @@
         margin: 4.5px 0 0 0;
     }
 
-    // .back-disable {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100vw;
-    //     height: 100vh;
-    //     visibility: hidden;
-    //     opacity: 0;
-    //     background: rgba(0, 0, 0, 0.8);
-    //     transition: opacity 150ms ease;
-    //     z-index: 0;
-    // }
-
     .checkbox:checked ~ .back-disable {
         visibility: visible;
         opacity: 1;
@@ -307,11 +294,11 @@
     }
     .menu .slider .slider-menu {
         max-width: var(--slider-width);
-        max-height: 100%;
         background: #3F2E3E;
         padding: 58px 38px 38px 38px;
         display: flex;
         flex-direction: column;
+        height: 100vh;
         
     }
 
@@ -349,6 +336,17 @@
         }
         .checkbox:checked ~ .slider .slider-menu {
             overflow-y: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar {
+        min-height: 70px;
+    }
+    .header__logo {
+        figure {
+            width: 105px;
         }
     }
 }

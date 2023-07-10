@@ -379,3 +379,98 @@
         }
     }
 }
+
+@media only screen and (max-width: 575px) { 
+    .homepage {
+        .mainvisual {
+            width: 100%;
+            height: auto;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+            .owl-theme .owl-nav [class*=owl-]:hover{
+                background-color: unset;
+            }
+            .owl-prev {
+                left: 10px;
+            }
+            .owl-next {
+                right: 10px;
+            }
+        }
+        .about {
+            padding-top: 40px;
+            padding-bottom: 30px;
+            .row {
+                justify-content: center;
+            }
+            figure {
+                width: 80%;
+            }
+            &__content {
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                a {
+                    font-size: 18px;
+                    width: 150px;
+                }
+            }
+        }
+        .medical {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            h2 {
+                font-size: 30px;
+                padding: 0 30px;
+            }
+        }
+        .news {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            h2 {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            .owl-prev {
+                left: 7px;
+            }
+            .owl-next {
+                right: 7px;
+            }
+            .owl-theme .owl-nav [class*=owl-]:hover{
+                background-color: unset;
+            }
+            .owl-nav {
+                top: 45%;
+            }
+        }
+        .reviews {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .container {
+                padding: 0 0;
+            }
+            figure {
+                margin-bottom: 25px;
+            }
+            h2 {
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+            &-list {
+                row-gap: 25px;
+            }
+            &-item {
+                width: 90%;
+                &::after {
+                    right: -30px;
+                }
+            }
+        }
+    }
+}

@@ -141,3 +141,35 @@
         }
     }
 }
+
+@media only screen and (max-width: 575px) { 
+    .contactPage {
+        padding-bottom: 60px;
+        &__title {
+            height: 120px;
+            background: url('./assets/images/healthcare/title-background.png') center center no-repeat;
+            background-size: cover;
+            h1 {
+                font-size: 30px;
+            }
+        }
+        &__content {
+            padding-top: 30px;
+            &-form {
+                padding: 20px 15px;
+                .form-text{
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    .address, .phone {
+                        gap: 20px;
+                    }
+                }
+                .form-contact {
+                    input[type=submit] {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
