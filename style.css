@@ -376,8 +376,7 @@ figure {
 .footer-icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer .section-menu-wrap {
   height: 100%;
@@ -493,8 +492,7 @@ figure {
     padding-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
     justify-content: center;
     margin-bottom: 25px;
   }
@@ -504,8 +502,7 @@ figure {
     font-size: 18px;
   }
   .footer__menu {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     row-gap: 10px;
     justify-content: space-evenly;
   }
@@ -525,9 +522,7 @@ figure {
   color: #fff;
   line-height: 1;
   border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   gap: 15px;
 }
 .pagination_bar .page-numbers {
@@ -603,8 +598,7 @@ figure {
   max-height: 741px;
 }
 .homepage .mainvisual .owl-carousel .owl-item figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .mainvisual button:focus {
   outline: 0;
@@ -651,6 +645,7 @@ figure {
   background-color: #864656;
 }
 .homepage .about {
+  padding-top: 70px;
   padding-bottom: 70px;
 }
 .homepage .about .row {
@@ -659,8 +654,7 @@ figure {
 .homepage .about figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .about__content h2 {
   color: #B16A7C;
@@ -715,8 +709,7 @@ figure {
 .homepage .medical figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -802,8 +795,7 @@ figure {
 .homepage .news figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -875,8 +867,7 @@ figure {
 .homepage .reviews figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .reviews h2 {
   font-size: 55px;
@@ -958,8 +949,7 @@ figure {
 .healthcare__item figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1051,8 +1041,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .aboutPage__content-text2 p {
   font-size: 24px;
@@ -1069,8 +1058,7 @@ figure {
 .aboutPage__content-imgList figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1127,8 +1115,7 @@ figure {
 .newsPage__content .item figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1430,8 +1417,7 @@ figure {
 .singlePost .sidebar__news-list a figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .singlePost .sidebar__news-list a span {
   flex: 1;
@@ -1552,8 +1538,7 @@ figure {
 .related-posts figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
