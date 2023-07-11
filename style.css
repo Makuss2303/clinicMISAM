@@ -72,7 +72,6 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -80,10 +79,11 @@ figure {
   position: relative;
 }
 .header__nav-menu .li-item a {
+  display: block;
   color: #000;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-decoration: none;
-  padding-bottom: 25px;
+  padding: 5px;
 }
 .header__nav-menu .li-item a:hover {
   color: #B16A7C;
@@ -92,22 +92,26 @@ figure {
   display: none;
   background-color: #fff;
   position: absolute;
-  padding-right: 10px;
+  padding: 10px 20px;
   width: 568px;
   z-index: 2;
   top: 40px;
   left: 0;
   flex-direction: column;
-  gap: 15px;
+  row-gap: 15px;
 }
 .header__nav-menu .li-item .submenu li {
   padding-left: 0;
 }
-.header__nav-menu .li-item .submenu li:hover {
-  background-color: #B16A7C;
+.header__nav-menu .li-item .submenu li a {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 1.1em;
 }
-.header__nav-menu .li-item .submenu li:hover a {
+.header__nav-menu .li-item .submenu li a:hover {
   color: #fff;
+  background-color: #B16A7C;
+  border-radius: 10px;
 }
 .header__nav-menu .li-item:hover .submenu {
   display: flex;
@@ -137,6 +141,9 @@ figure {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
+}
+.header__item li:first-child {
+  padding-left: 0;
 }
 
 .navbar-mobile {
@@ -384,8 +391,7 @@ figure {
 .footer-icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer .section-menu-wrap {
   height: 100%;
@@ -501,8 +507,7 @@ figure {
     padding-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
     justify-content: center;
     margin-bottom: 25px;
   }
@@ -512,8 +517,7 @@ figure {
     font-size: 18px;
   }
   .footer__menu {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     row-gap: 10px;
     justify-content: space-evenly;
   }
@@ -533,9 +537,7 @@ figure {
   color: #fff;
   line-height: 1;
   border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   gap: 15px;
 }
 .pagination_bar .page-numbers {
@@ -636,8 +638,7 @@ figure {
   max-height: 741px;
 }
 .homepage .mainvisual .owl-carousel .owl-item figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .mainvisual button:focus {
   outline: 0;
@@ -693,8 +694,7 @@ figure {
 .homepage .about figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .about__content h2 {
   color: #B16A7C;
@@ -749,8 +749,7 @@ figure {
 .homepage .medical figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -836,8 +835,7 @@ figure {
 .homepage .news figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -909,8 +907,7 @@ figure {
 .homepage .reviews figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .homepage .reviews h2 {
   font-size: 55px;
@@ -1082,8 +1079,7 @@ figure {
 .healthcare__item figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1204,8 +1200,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .aboutPage__content-text2 p {
   font-size: 24px;
@@ -1222,8 +1217,7 @@ figure {
 .aboutPage__content-imgList figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1313,8 +1307,7 @@ figure {
 .newsPage__content .item figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1662,8 +1655,7 @@ figure {
 .singlePost .sidebar__news-list a figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .singlePost .sidebar__news-list a span {
   flex: 1;
@@ -1784,8 +1776,7 @@ figure {
 .related-posts figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -2026,8 +2017,7 @@ figure {
 .singlePage .sidebar__news-list a figure img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .singlePage .sidebar__news-list a span {
   flex: 1;
