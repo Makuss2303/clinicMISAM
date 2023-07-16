@@ -375,7 +375,7 @@ figure {
   background-size: cover;
 }
 .footer .container {
-  min-height: 550px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -384,14 +384,15 @@ figure {
 }
 .footer-icon {
   display: block;
-  width: 100%;
+  width: 70%;
   height: auto;
   margin-bottom: 40px;
 }
 .footer-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .footer .section-menu-wrap {
   height: 100%;
@@ -406,7 +407,7 @@ figure {
 }
 .footer__address-text {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 .footer__address-text .address, .footer__address-text .phone {
@@ -431,7 +432,7 @@ figure {
 }
 .footer__menu li a {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 .footer__menu li a:hover {
@@ -507,7 +508,8 @@ figure {
     padding-left: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
     justify-content: center;
     margin-bottom: 25px;
   }
@@ -517,7 +519,8 @@ figure {
     font-size: 18px;
   }
   .footer__menu {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     row-gap: 10px;
     justify-content: space-evenly;
   }
@@ -537,7 +540,9 @@ figure {
   color: #fff;
   line-height: 1;
   border-radius: 4px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   gap: 15px;
 }
 .pagination_bar .page-numbers {
@@ -589,7 +594,7 @@ figure {
 }
 .homepage .mainvisual {
   position: relative;
-  height: 742px;
+  height: auto;
 }
 .homepage .mainvisual svg {
   width: 35px;
@@ -638,7 +643,8 @@ figure {
   max-height: 741px;
 }
 .homepage .mainvisual .owl-carousel .owl-item figure img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .homepage .mainvisual button:focus {
   outline: 0;
@@ -694,16 +700,18 @@ figure {
 .homepage .about figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .homepage .about__content h2 {
   color: #B16A7C;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 20px;
 }
 .homepage .about__content p {
-  font-size: 22px;
+  font-size: 18px;
 }
 .homepage .about__content-button {
   display: flex;
@@ -731,7 +739,7 @@ figure {
 }
 .homepage .medical h2 {
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
   color: #B16A7C;
   font-weight: 900;
   margin-bottom: 50px;
@@ -749,7 +757,8 @@ figure {
 .homepage .medical figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -790,7 +799,7 @@ figure {
 }
 .homepage .news h2 {
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
   color: #B16A7C;
   font-weight: 900;
   margin-bottom: 50px;
@@ -835,7 +844,8 @@ figure {
 .homepage .news figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -907,10 +917,11 @@ figure {
 .homepage .reviews figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .homepage .reviews h2 {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 900;
   color: #B16A7C;
   text-align: center;
@@ -1054,12 +1065,12 @@ figure {
 .healthcare__title {
   display: flex;
   align-items: center;
-  height: 288px;
+  height: 200px;
   background: url("./assets/images/healthcare/title-background.png");
 }
 .healthcare__title h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 900;
   color: #B16A7C;
   margin-bottom: 0;
@@ -1079,7 +1090,8 @@ figure {
 .healthcare__item figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1088,12 +1100,12 @@ figure {
   background: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  min-height: 330px;
+  min-height: 270px;
   box-shadow: 0px 3px 4px #C5C5C5;
 }
 .healthcare__item h2 {
   position: relative;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 900;
   color: #B16A7C;
   text-align: center;
@@ -1114,7 +1126,7 @@ figure {
   text-align: center;
   margin-bottom: 0;
   margin-top: 15px;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1162,12 +1174,12 @@ figure {
 .aboutPage__title {
   display: flex;
   align-items: center;
-  height: 288px;
+  height: 200px;
   background: url("./assets/images/healthcare/title-background.png");
 }
 .aboutPage__title h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 900;
   color: #B16A7C;
   margin-bottom: 0;
@@ -1176,7 +1188,7 @@ figure {
   padding-top: 70px;
 }
 .aboutPage__content h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 900;
   color: #B16A7C;
   margin-bottom: 30px;
@@ -1190,7 +1202,7 @@ figure {
   flex: 1;
 }
 .aboutPage__content-text .text-wrap p {
-  font-size: 24px;
+  font-size: 18px;
 }
 .aboutPage__content-text figure {
   width: 35%;
@@ -1200,10 +1212,11 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutPage__content-text2 p {
-  font-size: 24px;
+  font-size: 18px;
 }
 .aboutPage__content-imgList {
   display: flex;
@@ -1217,7 +1230,8 @@ figure {
 .aboutPage__content-imgList figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1279,12 +1293,12 @@ figure {
 .newsPage__title {
   display: flex;
   align-items: center;
-  height: 288px;
+  height: 200px;
   background: url("./assets/images/healthcare/title-background.png");
 }
 .newsPage__title h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 900;
   color: #B16A7C;
   margin-bottom: 0;
@@ -1307,7 +1321,8 @@ figure {
 .newsPage__content .item figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1397,12 +1412,12 @@ figure {
 .contactPage__title {
   display: flex;
   align-items: center;
-  height: 288px;
+  height: 200px;
   background: url("./assets/images/healthcare/title-background.png");
 }
 .contactPage__title h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 900;
   color: #B16A7C;
   margin-bottom: 0;
@@ -1417,17 +1432,17 @@ figure {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 3px 4px #C5C5C5;
-  padding: 35px 30px;
+  padding: 25px 30px;
 }
 .contactPage__content-form .form-text {
   color: #000;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 .contactPage__content-form .form-text .address, .contactPage__content-form .form-text .phone {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 .contactPage__content-form .form-text .address {
   margin-bottom: 15px;
@@ -1467,6 +1482,9 @@ figure {
   transition: color 0.3s, border 0.3s, background 0.3s, opacity 0.3s;
   vertical-align: middle;
   width: 100%;
+}
+.contactPage__content-form .form-contact input[type=submit] {
+  margin-bottom: 0;
 }
 .contactPage__content-form .form-contact textarea {
   background-color: #fff;
@@ -1573,7 +1591,7 @@ figure {
   padding-bottom: 40px;
 }
 .singlePost__content h1 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 800;
   color: #B16A7C;
   margin-bottom: 20px;
@@ -1589,7 +1607,7 @@ figure {
   gap: 5px;
 }
 .singlePost__content p {
-  font-size: 24px;
+  font-size: 18px;
 }
 .singlePost__content img {
   margin-top: 50px;
@@ -1604,7 +1622,7 @@ figure {
 }
 .singlePost .sidebar__medical-package h2 {
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: #fff;
   background-color: #B16A7C;
@@ -1622,7 +1640,7 @@ figure {
 }
 .singlePost .sidebar__medical-package ul li a {
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
 }
 .singlePost .sidebar__medical-package ul li a:hover {
   opacity: 0.7;
@@ -1632,7 +1650,7 @@ figure {
 }
 .singlePost .sidebar__news h2 {
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: #fff;
   background-color: #B16A7C;
@@ -1646,7 +1664,7 @@ figure {
   display: flex;
   gap: 15px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .singlePost .sidebar__news-list a figure {
   width: 133px;
@@ -1655,11 +1673,12 @@ figure {
 .singlePost .sidebar__news-list a figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .singlePost .sidebar__news-list a span {
   flex: 1;
-  font-size: 24px;
+  font-size: 18px;
   color: #000;
   line-height: 1.2em;
 }
@@ -1776,7 +1795,8 @@ figure {
 .related-posts figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1941,16 +1961,16 @@ figure {
 .singlePage__content {
   width: 70%;
   padding-bottom: 40px;
-  font-size: 24px;
+  font-size: 18px;
 }
 .singlePage__content h1 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 800;
   color: #B16A7C;
   margin-bottom: 20px;
 }
 .singlePage__content h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 .singlePage__content img {
@@ -1966,7 +1986,7 @@ figure {
 }
 .singlePage .sidebar__medical-package h2 {
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: #fff;
   background-color: #B16A7C;
@@ -1984,7 +2004,7 @@ figure {
 }
 .singlePage .sidebar__medical-package ul li a {
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
 }
 .singlePage .sidebar__medical-package ul li a:hover {
   opacity: 0.7;
@@ -1994,7 +2014,7 @@ figure {
 }
 .singlePage .sidebar__news h2 {
   padding: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 900;
   color: #fff;
   background-color: #B16A7C;
@@ -2008,7 +2028,7 @@ figure {
   display: flex;
   gap: 15px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .singlePage .sidebar__news-list a figure {
   width: 133px;
@@ -2017,11 +2037,12 @@ figure {
 .singlePage .sidebar__news-list a figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .singlePage .sidebar__news-list a span {
   flex: 1;
-  font-size: 24px;
+  font-size: 18px;
   color: #000;
   line-height: 1.2em;
 }

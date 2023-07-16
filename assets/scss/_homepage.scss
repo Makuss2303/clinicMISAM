@@ -1,7 +1,7 @@
 .homepage {
     .mainvisual {
         position: relative;
-        height: 742px;
+        height: auto;
         svg {
             width: 35px;
             height: 35px;
@@ -113,12 +113,13 @@
         &__content {
             h2 {
                 color: $themeColor;
-                font-size: 55px;
+                font-size: $titleSize;
                 font-weight: 900;
                 text-align: center;
+                margin-bottom: 20px;
             }
             p {
-                font-size: 22px;
+                font-size: $contentSize;
             }
             &-button {
                 display: flex;
@@ -147,7 +148,7 @@
         padding-bottom: 70px;
         h2 {
             text-align: center;
-            font-size: 55px;
+            font-size: $titleSize;
             color: $themeColor;
             font-weight: 900;
             margin-bottom: 50px;
@@ -206,7 +207,7 @@
         padding-bottom: 70px;
         h2 {
             text-align: center;
-            font-size: 55px;
+            font-size: $titleSize;
             color: $themeColor;
             font-weight: 900;
             margin-bottom: 50px;
@@ -326,7 +327,7 @@
             }
         }
         h2 {
-            font-size: 55px;
+            font-size: $titleSize;
             font-weight: 900;
             color: $themeColor;
             text-align: center;

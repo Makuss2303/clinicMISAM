@@ -2,7 +2,7 @@
     background: url('./assets/images/footer-background.png') center center no-repeat;
     background-size: cover;
     .container {
-        min-height: 550px;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -11,7 +11,7 @@
     }
     &-icon {
         display: block;
-        width: 100%;
+        width: 70%;
         height: auto;
         img {
             width: 100%;
@@ -36,7 +36,7 @@
     &__address {
         &-text{
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
             .address, .phone {
                 display: flex;
@@ -62,7 +62,7 @@
         li {
             a {
                 color: #fff;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 700;
                 &:hover {
                     opacity: .8;

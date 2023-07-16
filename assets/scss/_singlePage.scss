@@ -8,15 +8,15 @@
     &__content {
         width: 70%;
         padding-bottom: 40px;
-        font-size: 24px;
+        font-size: $contentSize;
         h1 {
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 800;
             color: $themeColor;
             margin-bottom: 20px;
         }
         h2 {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
         }
         img {
@@ -31,7 +31,7 @@
             margin-bottom: 80px;
             h2 {
                 padding: 20px;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 900;
                 color: #fff;
                 background-color: $themeColor;
@@ -47,7 +47,7 @@
                     padding: 10px;
                     a {
                         color: #000;
-                        font-size: 24px;
+                        font-size: $contentSize;
                         &:hover {
                             opacity: .7;
                         }
@@ -61,7 +61,7 @@
         &__news {
             h2 {
                 padding: 20px;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 900;
                 color: #fff;
                 background-color: $themeColor;
@@ -85,11 +85,11 @@
                     }
                     span {
                         flex: 1;
-                        font-size: 24px;
+                        font-size: $contentSize;
                         color: #000;
                         line-height: 1.2em;
                     }
-                    margin-bottom: 20px;
+                    margin-bottom: 15px;
                     &:hover {
                         opacity: .7;
                     }
